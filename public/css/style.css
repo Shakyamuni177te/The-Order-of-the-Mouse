@@ -28,10 +28,12 @@ margin-right: auto;
 a:link { 
 	font-weight: bold; 
 	text-decoration: none; 
+	color: red;
 	}
 a:visited { 
 	font-weight: bold; 
 	text-decoration: none; 
+	color: red;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
@@ -71,13 +73,14 @@ height: 2090px;
 position: relative;
 margin-right: 250px;
 margin-left: 250px;
-width: 350px; 
+width: 400px; 
 padding: 10px;
 border-color: grey;
 border-top-width: 2px;
 border-top-style: solid;
 border-bottom-width: 2px;
 border-bottom-style: solid;
+bottom: 16px;
 }
 #main-content {
 display: block;
