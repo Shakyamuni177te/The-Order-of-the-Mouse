@@ -10,7 +10,10 @@ body {
 p { 
 
 	}
-	
+@font-face {
+font-family: Castelar;
+src: url(/fonts/CASTELAR.woff);
+}
 h1 {
 font: bold normal 2eme georgia, sans-serif;
 font-size: 2em;
@@ -26,14 +29,12 @@ margin-right: auto;
 
 }
 a:link { 
-	font-weight: bold; 
 	text-decoration: none; 
-	color: red;
-	}
+	color: #CE99;
+}
 a:visited { 
-	font-weight: bold; 
 	text-decoration: none; 
-	color: red;
+	color: #CE99;
 	}
 a:hover, a:focus, a:active { 
 	text-decoration: underline; 
@@ -46,22 +47,23 @@ abbr {
 
 /* specific divs */
 #topbar {
-background: #153e5e;
+background: #826e83;
 height: 51px;
 width: 2090px;
 border-color: #466E8D;
 border-width: 1px;
 border-style: dotted;
+font-family: Castelar;
 }
 #left-sidebar {
-background: #153e5e;
+background: #123e24;
 height: 2090px;
 width: 225px;
 position: absolute;
-border-right-color: #466E8D;
-border-right-width: 1px;
+border-color: #466E8D;
+border-right-width: 2px;
 border-right-style: solid;
-border-right-style: dotted;
+font-family: Castelar;
 }
 #title-area {
 display: block;
@@ -73,14 +75,9 @@ height: 2090px;
 position: relative;
 margin-right: 250px;
 margin-left: 250px;
-width: 400px; 
+width: 700px; 
 padding: 10px;
-border-color: grey;
-border-top-width: 2px;
-border-top-style: solid;
-border-bottom-width: 2px;
-border-bottom-style: solid;
-bottom: 16px;
+bottom: 15px;
 }
 #main-content {
 display: block;
@@ -95,6 +92,9 @@ margin-left: 250px;
 }
 .sidebar-text {
 margin-left: 2em;
+color: #CE6818;
+font-weight: bold;
+font-family: Castelar;
 }
 .innerLogo {
 display: inline-block;
