@@ -21,7 +21,7 @@ app.set('view engine', 'html')
 
 
 // load global favicon
-app.use(favicon(__dirname + '/public/img/FavIcon1.png'));
+app.use(favicon(__dirname + '/public/img/clown-fox_conceptart-OrderoftheMouse.jpg'));
 // load dependencies
 app.use(logger('dev'));
 app.use(bodyParser.json());
