@@ -13,15 +13,16 @@
 		<!-- main layout template -->
 		<script type="text/template" id="template-AppLayoutView">
 			<div id="topbar">
-				<div class="innerLogo">
+				<div class="start">
+				<a id="nav-start" class="navButton" href="#start">Start Again</a>&nbsp;&nbsp;
 				</div>
 				<div id="navigation-bar">
 					<a id="nav-home" class="navButton" href="#home">Game</a>&nbsp;&nbsp;
 					<a id="nav-skills" class="navButton" href="#skills">Skills</a>&nbsp;&nbsp;
-					<a id="nav-resources" class="navButton" href="#resources">Inventory</a>&nbsp;&nbsp;
-					<a id="nav-people" class="navButton" href="#people">Relationships</a>&nbsp;&nbsp;
-					<a id="nav-contact" class="navButton" href="#contact">Friends</a>&nbsp;&nbsp;
-					<a id="nav-about" class="navButton" href="#about">Magic</a>
+					<a id="nav-inventory" class="navButton" href="#inventory">Inventory</a>&nbsp;&nbsp;
+					<a id="nav-relationships" class="navButton" href="#relationships">Relationships</a>&nbsp;&nbsp;
+					<a id="nav-friends" class="navButton" href="#friends">Friends</a>&nbsp;&nbsp;
+					<a id="nav-magic" class="navButton" href="#magic">Magic</a>
 				</div>
 			</div>
 			<div id="left-sidebar">
@@ -33,33 +34,46 @@
 				<p>Resonant Frequency<p/>
 				</div>
 			</div>
-			<div id="main-text">
-				<h1 class="title">The Order of the Mouse</br></h1>
-				<h2 class="title">Dragon Bear, Clown-Fox and Rabbit-Bean experience horror within the Castle of Cages and Revolving Walls</h2>
-			</div>
 			<div id="ContentRegion"></div>
 			</div>
 		</script>
-
+		
+		<!-- start screen template -->
+		<script type="text/template" id="template-StartLayoutView">
+			<div id="main-text">
+				<h1 class="title">The Order of the Mouse</br></h1>
+				<h2 class="title">Dragon Bear, Clown-Fox and Rabbit-Bean experience horror within the Castle of Cages and Revolving Walls.</h2>
+				</br>
+				<div class="button">
+				<button type="button">Start Game</button>
+				</div>
+				<div class="button">
+				<button type="button">Character Creator</button>
+				</div>
+			</div>
+		</script>
+		
 		<!-- home screen template -->
 		<script type="text/template" id="template-HomeLayoutView">
 		<div id="main-content">
 			<div id="home">
-			<p>"<i>If naked is the most honest you can be and society teaches you it's dirty and corrupt and a sin then no wonder this is the world we live in"</i> -- Leon De Sade</p>
+			<p>"<i>If naked is the most honest you can be and society teaches you it's dirty and corrupt and a sin then no wonder this is the world we live in" -- Leon De Sade</i></p>
 			<p>When Rabbit-Bean entered the forest, Clown-Fox had already removed his clothes and was dancing around the camp-fire, his bright tail burning like
 			flames around the bright of the flames, moving with an intensity that seemed almost dangerous, unnerving. He smiled at her as he caught her eye, and
 			he stared at her as he continued to dance. She had not seen any creature like him before and the sight of him made her want to hide her face in her clothes,
 			to cover her fur with the soft fuzz of her paws and peek out at him him under them, like a timid huntress, to watch his impressive, scandalous dance with
 			eyes that would then be hidden from him. She found that she could not. Rather, she stood there in the forest clearing and the flame burned brighter and
 			brighter. All around were small huts, and around the fire mingled groups of Deer-Foxes, Night-Foxes and Bird-Foxes, as well as a host of more ordinary
-			animals. More ordinary rabbits, birds and a few weasels hopped an scurried about. A lizard crawled across a tree and down into a thicket. All around the
+			animals. More ordinary rabbits, birds and a few weasels hopped and scurried magic. A lizard crawled across a tree and down into a thicket. All around the
 			movement of the village arranged itself according to its whim, but the more she watched them move, the more she realised the reason for Clown-Fox's dancing.
 			Clown-Fox was conducting them all with his movements, though somehow they did not know it.</p>
 			
 			<p>As Rabbit-Bean continued to watch the unfolding scene, Clown-Fox's dancing became steadily faster, more intense and full of flourishes and clever foxy 
 			trickery. The faster he danced the brighter the fire became, until at last it seemed that the whole of the forest clearing was on fire and Rabbit-Bean was
 			within it, being slowly consumed by the burning, charring light that lapped against her fir and skin and eyes and tiny, rabbit nose, and yet still did not
-			pain her. There was an explosion, a cloud of dust, and suddenly the image of Clown-Fox was gone. Rabbit-Bean awoke in a tiny cell within the wizard's house.
+			pain her.</p>
+
+			<p>Then, without warning, came an explosion, a cloud of dust, and suddenly the image of Clown-Fox was gone. Rabbit-Bean awoke in a tiny cell within the wizard's house.
 			His beard was long and his eyes we large. He looked down at Rabbit-Bean with a sneering expression of his face. Beside her was a cage within which Clown-Fox
 			sat on his haunches. Rabbit-Bean looked again at his eye which were no longer the beautiful, deep brown foxy hue they had been previously, but now swirled deep
 			black and green in a sinister hypnotic pattern. The wizard looked down at Rabbit-Bean, prostrate on the floor beneath him and smiled, the edges of his mouth
@@ -70,7 +84,7 @@
 		</div>
 		</script>
 
-		<!-- skills screen templa te -->
+		<!-- skills screen template -->
 		<script type="text/template" id="template-SkillsLayoutView">
 		<div id="main-content">
 			<div class="skills">
@@ -79,34 +93,34 @@
 		</div>
 		</script>
 
-		<script type="text/template" id="template-ResourcesLayoutView">
+		<script type="text/template" id="template-InventoryLayoutView">
 		<div id="main-content">
-			<div class="resources">
-    			<h1>Inventory<h1>
+			<div class="inventory">
+    			<h1>Inventory</h1>
     		</div>
 		</div>
 		</script>
 
-		<script type="text/template" id="template-ContactLayoutView">
+		<script type="text/template" id="template-FriendsLayoutView">
 		<div id="main-content">
-		    <div class="contact">
+		    <div class="friends">
 		    	<h1>Friends</h1>
 		    </div>
 		</div>
 		</script>
 
-		<script type="text/template" id="template-PeopleLayoutView">
+		<script type="text/template" id="template-RelationshipsLayoutView">
 		<div id="main-content">
-			<div class="people">
+			<div class="relationships">
 				<h1>Relationships</h1>
     		</div>
 		</div>
 		</script>
 
-		<script type="text/template" id="template-AboutLayoutView">
+		<script type="text/template" id="template-MagicLayoutView">
 		<div id="main-content">
-			<div class="about">
-				<h1>Magic</h1
+			<div class="magic">
+				<h1>Magic</h1>
     		</div>
 		</div>
 		</script>
