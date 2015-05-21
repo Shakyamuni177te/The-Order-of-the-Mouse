@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+		<title>Order of the Mouse</title>
+		 <meta name="author" content="Peter David Carter">
+		<link rel="stylesheet" type="text/css" href="css/gamecreator.css">
+	</head>
+	<body>
+		<!-- Base element for app -->
+		<div id="AppBase"></div>
+
+		<!-- main layout template -->
+			<div id="topbar">
+				<div class="start">
+				<a id="nav-start" class="navButton" href="#start">Play Game</a>&nbsp;&nbsp;
+				</div>
+				<div id="navigation-bar">
+					<a id="nav-pagecreate" class="navButton" href="#pagemaker">Basic Page Creator</a>&nbsp;&nbsp;
+					<a id="nav-charcreate" class="navButton" href="#charmaker">Character Creator</a>&nbsp;&nbsp;
+					<a id="nav-animator" class="navButton" href="#animator">Animator</a>&nbsp;&nbsp;
+					<a id="nav-artuploader" class="navButton" href="#artupload">Upload Art</a>&nbsp;&nbsp;
+					<a id="nav-itemcreate" class="navButton" href="#itemmaker">Item Creator</a>&nbsp;&nbsp;
+					<a id="nav-coffee" class="navButton" href="#coffee">Coffee?</a>
+				</div>
+			</div>
+			<div id="left-sidebar">
+				<div class="sidebar-text">
+				</div>
+			</div>
+			<div id="ContentRegion"></div>
+			</div>
+		
+		<!-- start basic page creation template -->
+		<script type="text/template" id="template-PageCreateLayoutView">
+			<div id="main-text">
+				<h1 class="title">Create Basic Game Page</h1>
+				<div id="input-area">
+					<p alt="the number of name used to identify the page">Page Identifier</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Page Text/Code</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+		
+		<!-- start character creator template -->
+		<script type="text/template" id="template-CharacterCreateLayoutView">
+			<div id="main-text">
+				<h1 class="title">Create Character</h1>
+				<div id="input-area">
+					<p alt="the number of name used to identify the page">Character Name</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Description</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+		
+		<!-- start animator page template -->
+		<script type="text/template" id="template-AnimatorLayoutView">
+			<div id="main-text">
+				<h1 class="title">Animator</h1>
+				<div id="input-area">
+					<p alt="the number of name used to identify the page">Page Identifier</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Page Text/Code</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+		
+		<!-- start art upload page template -->
+		<script type="text/template" id="template-ArtUploadLayoutView">
+			<div id="main-text">
+				<h1 class="title">Upload Art</h1>
+				<div id="input-area">
+					<p alt="the number of name used to identify the page">Page Identifier</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Page Text/Code</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+		
+		<!-- start item creator template -->
+		<script type="text/template" id="template-ItemCreateLayoutView">
+			<div id="main-text">
+				<h1 class="title">Item Creator</h1>
+				<div id="input-area">
+					<p alt="the number of name used to identify the page">Page Identifier</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Page Text/Code</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+		
+		<!-- start coffee grinding template -->
+		<script type="text/template" id="template-CoffeeGrinderLayoutView">
+			<div id="main-text">
+				<h1 class="title">Would you like some coffee?</h1>
+				<div id="input-area">
+					<p alt="the number of name used to identify the page">Page Identifier</p>
+					<input class="small-input" type="text">
+					</br>
+					<p>Page Text/Code</p>
+					<input class="large-input" type="text">
+				</div>
+			</div>
+		</script>
+		<!-- libraries -->
+		<script type="text/javascript" src="vendor/jquery.js"></script>
+		<script type="text/javascript" src="vendor/underscore.js"></script>
+		<script type="text/javascript" src="vendor/backbone.js"></script>
+		<script type="text/javascript" src="vendor/backbone.marionette.js"></script>
+
+		<!-- app code -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>

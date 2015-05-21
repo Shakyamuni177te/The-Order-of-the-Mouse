@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+		<title>Order of the Mouse</title>
+		 <meta name="author" content="Peter David Carter">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<!-- Base element for app -->
+		<div id="AppBase"></div>
+
+		<!-- main layout template -->
+			<div id="topbar">
+				<div class="start">
+				<a id="nav-start" class="navButton" href="#start">Start Again</a>&nbsp;&nbsp;
+				</div>
+				<div id="navigation-bar">
+					<a id="nav-home" class="navButton" href="#home">Game</a>&nbsp;&nbsp;
+					<a id="nav-skills" class="navButton" href="#skills">Skills</a>&nbsp;&nbsp;
+					<a id="nav-inventory" class="navButton" href="#inventory">Inventory</a>&nbsp;&nbsp;
+					<a id="nav-relationships" class="navButton" href="#relationships">Relationships</a>&nbsp;&nbsp;
+					<a id="nav-friends" class="navButton" href="#friends">Friends</a>&nbsp;&nbsp;
+					<a id="nav-magic" class="navButton" href="#magic">Magic</a>
+				</div>
+			</div>
+			<div id="left-sidebar">
+				<div class="sidebar-text">
+				<p>HP<p/>
+				<p>Class</p>
+				<p>Network</p>
+				<p>Intoxication</p>
+				<p>Resonant Frequency<p/>
+				</div>
+			</div>
+			<div id="ContentRegion"></div>
+			</div>
+		
+		<!-- start page creation template -->
+		
+			<div id="main-text">
+				<h1 class="title">Game Creator:</h1>
+				<h2 class="title">Create Basic Page</h2>
+				</br>
+				<p>Page Identifier</p>
+				<input type="text">
+				</br>
+				<p>Page Text/Code</p>
+				<input type="text">
+			</div>
+		
+		<!-- libraries -->
+		<script type="text/javascript" src="vendor/jquery.js"></script>
+		<script type="text/javascript" src="vendor/underscore.js"></script>
+		<script type="text/javascript" src="vendor/backbone.js"></script>
+		<script type="text/javascript" src="vendor/backbone.marionette.js"></script>
+
+		<!-- app code -->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
