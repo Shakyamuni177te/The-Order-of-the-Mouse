@@ -21,21 +21,21 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 		},
 		ui: {
 			'navStart' : '#nav-start',
-			'navHome' : '#nav-home',
-			'navSkills' : '#nav-skills',
-			'navInventory' : '#nav-inventory',
-			'navRelationships' : '#nav-relationships',
-			'navFriends' : '#nav-friends',
-			'navMagic' : '#nav-magic'
+			'navPage' : '#nav-page',
+			'navChar' : '#nav-char',
+			'navAnimator' : '#nav-animator',
+			'navArt' : '#nav-art',
+			'navItem' : '#nav-item',
+			'navCoffee' : '#nav-coffee'
 		},
 		events: {
 			'click #nav-start' : 'onNavStartClicked',
-			'click #nav-home' : 'onNavHomeClicked',
-			'click #nav-skills' : 'onNavSkillsClicked',
-			'click #nav-inventory' : 'onNavInventoryClicked',
-			'click #nav-relationships' : 'onNavRelationshipsClicked',
-			'click #nav-friends' : 'onNavFriendsClicked',
-			'click #nav-magic' : 'onNavMagicClicked'
+			'click #nav-page' : 'onNavPageClicked',
+			'click #nav-char' : 'onNavCharClicked',
+			'click #nav-animator' : 'onNavAnimatorClicked',
+			'click #nav-art' : 'onNavArtClicked',
+			'click #nav-item' : 'onNavItemClicked',
+			'click #nav-coffee' : 'onNavCoffeeClicked'
 		},
 
 		/* when the view initializes, call initRouter to */
@@ -65,36 +65,36 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 			// and assign the routes and controller
 			var appRouter = new Marionette.AppRouter({
 				appRoutes: {
-    				'' : 'onStartRoute',
+    				'' : 'onPageRoute',
 					'start' : 'onStartRoute',
-    				'home' : 'onHomeRoute',
-    				'skills' : 'onSkillsRoute',
-    				'inventory' : 'onInventoryRoute',
-    				'relationships' : 'onRelationshipsRoute',
-    				'friends' : 'onFriendsRoute',
-    				'magic' : 'onMagicRoute'
+    				'page' : 'onPageRoute',
+    				'char' : 'onCharRoute',
+    				'animator' : 'onAnimatorRoute',
+    				'art' : 'onArtRoute',
+    				'item' : 'onItemRoute',
+    				'coffee' : 'onCoffeeRoute'
     			},
 				controller: {
 					onStartRoute: function() {
     					capturedThis.onStartNavigated();
     				},
-    				onHomeRoute: function() {
-    					capturedThis.onHomeNavigated();
+    				onPageRoute: function() {
+    					capturedThis.onPageNavigated();
     				},
-    				onSkillsRoute: function() {
-    					capturedThis.onSkillsNavigated();
+    				onCharRoute: function() {
+    					capturedThis.onCharNavigated();
     				},
-    				onInventoryRoute: function() {
-    					capturedThis.onInventoryNavigated();
+    				onAnimatorRoute: function() {
+    					capturedThis.onAnimatorNavigated();
     				},
-    				onRelationshipsRoute: function() {
-    					capturedThis.onRelationshipsNavigated();
+    				onArtRoute: function() {
+    					capturedThis.onArtNavigated();
     				},
-    				onFriendsRoute: function() {
-    					capturedThis.onFriendsNavigated();
+    				onItemRoute: function() {
+    					capturedThis.onItemNavigated();
     				},
-    				onMagicRoute: function() {
-    					capturedThis.onMagicNavigated();
+    				onCoffeeRoute: function() {
+    					capturedThis.onCoffeeNavigated();
     				}
     			}
 			});
@@ -104,54 +104,50 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 			to trigger the 'onStartRoute' handler */
 		onStartNavigated: function() {
 
-			// define and display an instance of the HomeLayoutView
+			// define and display an instance of the StartLayoutView
 			var startLayoutView = new module.StartLayoutView();
-			this.contentRegion.show(startLayoutView);
+			this.contentRegion.show(StartLayoutView);
 
 			// update the navigation
 			this.$el.find('.navButton.active').removeClass('active');
 			this.ui.navStart.addClass('active');
 		},
-		onHomeNavigated: function() {
-
-			// define and display an instance of the HomeLayoutView
-			var homeLayoutView = new module.HomeLayoutView();
-			this.contentRegion.show(homeLayoutView);
-
-			// update the navigation
+		onPageNavigated: function() {
+			var layoutView = new module.PageLayoutView();
+			this.contentRegion.show(layoutView);
 			this.$el.find('.navButton.active').removeClass('active');
-			this.ui.navHome.addClass('active');
+			this.ui.navPage.addClass('active');
 		},
 
-		onSkillsNavigated: function() {
-			var layoutView = new module.SkillsLayoutView();
+		onCharNavigated: function() {
+			var layoutView = new module.CharLayoutView();
 			this.contentRegion.show(layoutView);
 			this.$el.find('.navButton.active').removeClass('active');
-			this.ui.navSkills.addClass('active');
+			this.ui.navChar.addClass('active');
 		},
-		onInventoryNavigated: function() {
-			var layoutView = new module.InventoryLayoutView();
+		onAnimatorNavigated: function() {
+			var layoutView = new module.AnimatorLayoutView();
 			this.contentRegion.show(layoutView);
 			this.$el.find('.navButton.active').removeClass('active');
-			this.ui.navInventory.addClass('active');
+			this.ui.navAnimator.addClass('active');
 		},
-		onFriendsNavigated: function() {
-			var layoutView = new module.FriendsLayoutView();
+		onArtNavigated: function() {
+			var layoutView = new module.ArtLayoutView();
 			this.contentRegion.show(layoutView);
 			this.$el.find('.navButton.active').removeClass('active');
-			this.ui.navFriends.addClass('active');
+			this.ui.navArt.addClass('active');
 		},
-		onRelationshipsNavigated: function() {
-			var layoutView = new module.RelationshipsLayoutView();
+		onItemNavigated: function() {
+			var layoutView = new module.ItemLayoutView();
 			this.contentRegion.show(layoutView);
 			this.$el.find('.navButton.active').removeClass('active');
-			this.ui.navRelationships.addClass('active');
+			this.ui.navItem.addClass('active');
 		},
-		onMagicNavigated: function() {
-			var layoutView = new module.MagicLayoutView();
+		onCoffeeNavigated: function() {
+			var layoutView = new module.CoffeeLayoutView();
 			this.contentRegion.show(layoutView);
 			this.$el.find('.navButton.active').removeClass('active');
-			this.ui.navMagic.addClass('active');
+			this.ui.navCoffee.addClass('active');
 		}
 	});
 	
@@ -162,46 +158,46 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 		template: '#template-StartLayoutView'
 	});
 
-	module.HomeLayoutView = Marionette.LayoutView.extend({
+	module.PageLayoutView = Marionette.LayoutView.extend({
 		tagName: 'div',
-		id: 'HomeLayoutView',
+		id: 'PageLayoutView',
 		className: 'contentLayout',
-		template: '#template-HomeLayoutView'
+		template: '#template-PageLayoutView'
 	});
 
-	module.SkillsLayoutView = Marionette.LayoutView.extend({
+	module.CharLayoutView = Marionette.LayoutView.extend({
 		tagName: 'div',
-		id: 'SkillsLayoutView',
+		id: 'CharLayoutView',
 		className: 'contentLayout',
-		template: '#template-SkillsLayoutView'
+		template: '#template-CharLayoutView'
 	});
 
-	module.InventoryLayoutView = Marionette.LayoutView.extend({
+	module.AnimatorLayoutView = Marionette.LayoutView.extend({
 		tagName: 'div',
-		id: 'InventoryLayoutView',
+		id: 'AnimatorLayoutView',
 		className: 'contentLayout',
-		template: '#template-InventoryLayoutView'
+		template: '#template-AnimatorLayoutView'
 	});
 
-	module.RelationshipsLayoutView = Marionette.LayoutView.extend({
+	module.ArtLayoutView = Marionette.LayoutView.extend({
 		tagName: 'div',
-		id: 'RelationshipsLayoutView',
+		id: 'ArtLayoutView',
 		className: 'contentLayout',
-		template: '#template-RelationshipsLayoutView'
+		template: '#template-ArtLayoutView'
 	});
 
-	module.FriendsLayoutView = Marionette.LayoutView.extend({
+	module.ItemLayoutView = Marionette.LayoutView.extend({
 		tagName: 'div',
-		id: 'FriendsLayoutView',
+		id: 'ItemLayoutView',
 		className: 'contentLayout',
-		template: '#template-FriendsLayoutView'
+		template: '#template-ItemLayoutView'
 	});
 
-	module.MagicLayoutView = Marionette.LayoutView.extend({
+	module.CoffeeLayoutView = Marionette.LayoutView.extend({
 		tagName: 'div',
-		id: 'MagicLayoutView',
+		id: 'CoffeeLayoutView',
 		className: 'contentLayout',
-		template: '#template-MagicLayoutView'
+		template: '#template-CoffeeLayoutView'
 	});
 
 	/* add initializer, which fires when the app starts */

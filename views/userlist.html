@@ -6,14 +6,11 @@
   <title>User List</title>
   <meta name="description" content="User List">
   <meta name="author" content="Peter David Carter">
- 
-  <link rel="stylesheet" href="/css/style.css">
   
 </head>
  
 <body>
-  <h1>Welcome to Add User Test</h1>
-  <p>Test.</p>
+  <h1>User List</h1>
   <% for (u in userlist) { %>
       <li><a href="mailto:<%=userlist[u].email %>" %>
       <%= userlist[u].username %></a>

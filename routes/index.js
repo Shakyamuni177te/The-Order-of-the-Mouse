@@ -8,6 +8,16 @@ module.exports = function (db) {
     router.get('/', function(req, res) {
         res.render('index');
     });
+	
+	/* GET new page creation tool. */
+    router.get('/gamecreator', function(req, res) {
+		var gameworld = db.get('gameworld');
+    		gameworld.find({},{}, function(e, gamedetails){
+    			res.render('gamecreator', {
+    				"worlddb" : gamedetails
+    			});
+    		});
+    });
 
     /* GET Userlist page. */
     router.get('/userlist', function(req, res) {

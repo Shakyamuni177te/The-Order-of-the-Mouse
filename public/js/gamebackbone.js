@@ -30,7 +30,7 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 		},
 		events: {
 			'click #nav-start' : 'onNavStartClicked',
-			'click #nav-home' : 'onNavHomeClicked',
+			'click #nav-homeart' : 'onNavHomeClicked',
 			'click #nav-skills' : 'onNavSkillsClicked',
 			'click #nav-inventory' : 'onNavInventoryClicked',
 			'click #nav-relationships' : 'onNavRelationshipsClicked',
@@ -105,8 +105,8 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 		onStartNavigated: function() {
 
 			// define and display an instance of the HomeLayoutView
-			var startLayoutView = new module.StartLayoutView();
-			this.contentRegion.show(startLayoutView);
+			var layoutView = new module.StartLayoutView();
+			this.contentRegion.show(layoutView);
 
 			// update the navigation
 			this.$el.find('.navButton.active').removeClass('active');
@@ -115,8 +115,8 @@ app.module('RouteTest', function(module, App, Backbone, Marionette, $, _){
 		onHomeNavigated: function() {
 
 			// define and display an instance of the HomeLayoutView
-			var homeLayoutView = new module.HomeLayoutView();
-			this.contentRegion.show(homeLayoutView);
+			var layoutView = new module.HomeLayoutView();
+			this.contentRegion.show(layoutView);
 
 			// update the navigation
 			this.$el.find('.navButton.active').removeClass('active');
