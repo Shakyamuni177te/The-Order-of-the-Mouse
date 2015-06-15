@@ -45,19 +45,16 @@ abbr {
 
 /* specific divs */
 #topbar {
-background: #826e83;
+background: #162955;
 height: 51px;
 width: 2090px;
 font-family: Castelar;
 }
 #left-sidebar {
-background: #123e24;
+background: #162955;
 height: 2090px;
 width: 225px;
 position: absolute;
-border-color: #466E8D;
-border-width: 4px;
-border-style: dotted;
 font-family: Castelar;
 }
 
