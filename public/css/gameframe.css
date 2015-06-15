@@ -3,11 +3,11 @@ html {
 	margin: 0;
 	padding: 0;
 	}
-body {  
-	margin: 0; 
+body {
+	margin: 0;
 	padding: 0;
 	}
-p { 
+p {
 
 	}
 @font-face {
@@ -20,22 +20,22 @@ margin-left: auto;
 margin-right: auto;
 }
 
-h2 { 
+h2 {
 font-size: 1.5em;
 margin-left: auto;
 margin-right: auto;
 
 }
-a:link { 
-	text-decoration: none; 
+a:link {
+	text-decoration: none;
 	color: #DEC2BB;
 }
-a:visited { 
-	text-decoration: none; 
+a:visited {
+	text-decoration: none;
 	color: #DEC2BB;
 	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
+a:hover, a:focus, a:active {
+	text-decoration: underline;
 	color: #FFEEFF;
 	}
 abbr {
@@ -46,7 +46,7 @@ abbr {
 /* specific divs */
 #topbar {
 background: #162955;
-height: 51px;
+height: 50px;
 width: 2090px;
 font-family: Castelar;
 }
@@ -62,9 +62,9 @@ font-family: Castelar;
 position: relative;
 margin-right: 250px;
 margin-left: 350px;
-width: 700px; 
+width: 750px;
 padding: 10px;
-bottom: 15px;
+bottom: 40px;
 }
 #main-content {
 display: block;
@@ -80,6 +80,7 @@ margin-left: 250px;
 }
 .sidebar-text {
 margin-left: 2em;
+margin-top: 2em;
 color: #CE6818;
 font-weight: bold;
 font-family: Castelar;
@@ -89,10 +90,9 @@ display: inline;
 position: relative;
 margin-left: 250px;
 }
-.start {
+.corner-icon {
 display: inline;
 left: 35px;
 position: relative;
-top: 15px;
+top: 5px;
 }
-
