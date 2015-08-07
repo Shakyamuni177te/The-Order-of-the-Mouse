@@ -10,6 +10,8 @@ The Order of the Mouse is an adventure game that crosses various platforms and m
 in the nature of art and life and the manner in which the two interconnect. It is written for and with the
 help of Daisy Lewis, without whom the continuation of this project would not be possible.
 
+##Additional Info
+</br>
 This repo contains basic narrative, RPG and graphical elements. Other repos will be created to house additional self-contained elements. A list of additional repos follows:
 
 <p>www.github.com/Shakyamuni177te/MasterOfButtons</p>
