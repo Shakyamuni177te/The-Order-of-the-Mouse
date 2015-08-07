@@ -12,5 +12,5 @@ help of Daisy Lewis, without whom the continuation of this project would not be 
 
 This repo contains basic narrative, RPG and graphical elements. Other repos will be created to house additional self-contained elements. A list of additional repos follows:
 
-www.github.com/Shakyamuni177te/MasterOfButtons
-www.github.com/hoegrammer/democracy
+First repo: www.github.com/Shakyamuni177te/MasterOfButtons
+Second repo: www.github.com/hoegrammer/democracy
