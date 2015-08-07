@@ -1,6 +1,6 @@
 # The-Order-of-the-Mouse
 
-##Status: Very Early Alpha
+##Status: Experimental Code -- not guaranteed working 
 
 <i>And when I shall die, take him and cut him up in little stars, and he will make the face of heaven so fine that all the world will fall in love with night and pay no worship to the garish sun.</i>
 
