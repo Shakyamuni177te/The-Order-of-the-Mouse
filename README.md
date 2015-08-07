@@ -14,3 +14,7 @@ This repo contains basic narrative, RPG and graphical elements. Other repos will
 
 <p>www.github.com/Shakyamuni177te/MasterOfButtons</p>
 <p>www.github.com/hoegrammer/democracy</p>
+
+Additional information will be provided at:
+
+https://www.facebook.com/TheOrderoftheMouse?notif_t=page_user_activity
