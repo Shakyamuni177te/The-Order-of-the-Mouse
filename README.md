@@ -18,4 +18,4 @@ This repo contains basic narrative, RPG and graphical elements. Other repos will
 
 Additional information will be provided at:
 
-https://www.facebook.com/TheOrderoftheMouse?notif_t=page_user_activity
+https://www.facebook.com/TheOrderoftheMouse
