@@ -17,8 +17,8 @@ This repo contains basic narrative, RPG and graphical elements. Other repos will
 
 The final product will be found at
 
-www.orderofthemouse.co.uk
+http://www.orderofthemouse.co.uk
 
-NOTE: The Website is currently UNFINISHED and IN PROGRESS.
+NOTE: The website is currently UNFINISHED and IN PROGRESS.
 
 
