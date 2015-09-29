@@ -11,11 +11,9 @@ in the nature of art and life and the manner in which the two interconnect. It i
 help of Daisy Lewis/Nox Oculus, without whom the continuation of this project would not be possible.
 
 ##Additional Info
-This repo contains basic narrative, RPG and graphical elements. Other repos will be created to house additional self-contained elements. A list of additional repos follows:
+This repo contains basic narrative, RPG and graphical elements. However, production is currently taking place on the web-server directly, so this repo will not be updated or maintained for the time being. Everything will be properly open-sourced when it's done, don't worry :D.
 
-<p>www.github.com/Shakyamuni177te/MasterOfButtons</p>
-
-The final product will be found at
+The final product will be found at:
 
 http://www.orderofthemouse.co.uk
 
