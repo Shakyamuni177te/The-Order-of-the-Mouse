@@ -15,6 +15,10 @@ This repo contains basic narrative, RPG and graphical elements. Other repos will
 
 <p>www.github.com/Shakyamuni177te/MasterOfButtons</p>
 
-Additional information will also be provided at:
+The final product will be found at
 
-https://www.facebook.com/TheOrderoftheMouse
+www.orderofthemouse.co.uk
+
+NOTE: The Website is currently UNFINISHED and IN PROGRESS.
+
+
