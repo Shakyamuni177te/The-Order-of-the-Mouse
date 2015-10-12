@@ -17,6 +17,6 @@ The final product will be found at:
 
 http://www.orderofthemouse.co.uk
 
-NOTE: The website is currently UNFINISHED and IN PROGRESS.
+Please don't message me with website issues unless you have already refactored the existing code and abstracted the PHP base into something you can manage yourself.
 
 
