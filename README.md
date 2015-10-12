@@ -2,7 +2,7 @@
 
 ##Status: Alpha
 
-<i>And when I shall die, take him and cut him up in little stars, and he will make the face of heaven so fine that all the world will fall in love with night and pay no worship to the garish sun.</i>
+<i>And when I shall die, take them and cut them up in little stars, and they will make the face of heaven so fine that all the world will fall in love with night and pay no worship to the garish sun.</i>
 
 Dragon-Bear, Clown-Fox and Rabbit-Cat experience horror within the Castle of Cages and Revolving Walls.
 
