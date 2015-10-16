@@ -8,7 +8,7 @@ Dragon-Bear, Clown-Fox and Rabbit-Cat experience horror within the Castle of Cag
 
 The Order of the Mouse is an adventure game that crosses various platforms and media. It is an experiment
 in the nature of art and life and the manner in which the two interconnect. It is written for and with the
-help of Erica ROFLCOPTER/Nox Oculus, without whom the continuation of this project would not be possible.
+help of Erica <strong>ROFLCOPTER</strong>/Nox Oculus, without whom the continuation of this project would not be possible.
 
 ##Additional Info
 This repo contains basic narrative, RPG and graphical elements. However, production is currently taking place on the web-server directly, so this repo will not be updated or maintained for the time being. Everything will be properly open-sourced when it's done, don't worry :D.
